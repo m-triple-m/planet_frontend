@@ -1,0 +1,39 @@
+<div class="col-md-11 mx-auto">
+    <div class="col-md-10 mx-auto">
+        <nb-card class="main" style="margin-top:1%;border-radius: 0.5rem; box-shadow: 0px 3px 5px -1px rgba(0,0,0,0.2),0px 5px 8px 0px rgba(0,0,0,0.14),0px 1px 14px 0px rgba(0,0,0,0.12);">
+            <nb-card-body style="padding: 2rem;">
+                <form [formGroup]="solForm" *ngIf="!loading">
+                    <h3 class="text-center" style="color: black; font-size:1.5rem; font-weight:450;">Add Solution</h3>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <mat-form-field class="mt-4 w-100" appearance="outline">
+                                <mat-label> Title </mat-label>
+                                <input type="text" matInput formControlName="title">
+                            </mat-form-field>
+                        </div>
+             
+                        <div class="col-md-6">
+                            <mat-form-field class="mt-2 w-100" appearance="outline">
+                                <mat-label> Select Video </mat-label>
+                                <mat-select formControlName="video">
+                                    <mat-option *ngFor="let video of videoList" [value]="video._id">
+                                        {{video.title}}
+                                    </mat-option>
+                                </mat-select>
+                            </mat-form-field>
+                            
+                        </div>
+                        <div class="col-md-6">
+                            <img src="" alt="">
+                        </div>
+                        
+                    </div>    
+                </form>
+                <label class="mt-4">Describe Your Query</label>
+                <textarea id="sol" cols="30" rows="10" [(ngModel)]="soltext"></textarea>
+              
+                <button nbButton (click)="submitSol()">Submit Solution</button>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+<div class="row">
+    <div class="col-md-4">
+        <nb-card accent="danger">
+            <nb-card-body>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="icon-container">
+                            <nb-icon icon="people" style="font-size: 5rem;width: 100%;" status="control"></nb-icon>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-6">
+                                <h3>Total Users : </h3>
+                            </div>
+
+                            <div class="col-6 mx-auto" *ngIf="usersList">
+                                <p class="figure">{{usersList.length| number:'2.0'}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-md-4">
+        <nb-card accent="danger">
+            <nb-card-body>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="icon-container">
+                            <nb-icon icon="browser" style="font-size: 5rem;width: 100%;" status="control"></nb-icon>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Total Queries : </h4>
+                            </div>
+
+                            <div class="col-6 mx-auto" *ngIf="queriesList">
+                                <p class="figure">{{queriesList.length| number:'2.0'}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-md-4">
+        <nb-card accent="danger">
+            <nb-card-body>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="icon-container">
+                            <nb-icon icon="browser" style="font-size: 5rem;width: 100%;" status="control"></nb-icon>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-6">
+                                <h4>Total Videos : </h4>
+                            </div>
+
+                            <div class="col-6 mx-auto" *ngIf="videosList">
+                                <p class="figure">{{videosList.length| number:'2.0'}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-5">
+        <nb-card accent="success">
+                
+            <nb-card-body>
+                <div id="queryByDate" style="height: 20rem;"></div>
+            </nb-card-body>
+          </nb-card>
+    </div>
+    <div class="col-md-7">
+        <nb-card accent="success">
+            
+            <nb-card-body>
+            <div id="regByDate" style="height: 20rem;"></div>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>
+
+<nb-card class="mt-4" accent="success">
+            
+    <nb-card-body>
+    <div id="vidByDate" style="height: 20rem;"></div>
+    </nb-card-body>
+</nb-card>

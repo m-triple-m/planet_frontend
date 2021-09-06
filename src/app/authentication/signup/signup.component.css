@@ -1,0 +1,105 @@
+button {
+    border: 1px solid rgb(134, 133, 133);
+    border-radius: 5px;
+    background-color: rgb(126, 151, 172);
+    width: 200px;
+    height: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color:#cda45e ;
+    color: black;
+}
+
+input
+{
+    font-size: 1.2rem;
+}
+::placeholder
+{
+    color: black;
+    font-size: 1.5rem;
+  
+    font-weight: bold;
+}
+
+.main{
+    margin: 1px auto;
+    border-radius: 20px;
+    padding: 30px;
+    background-color:  #ecf0f1;;
+    
+ 
+}
+
+
+.label {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #141618ea;
+ 
+
+}
+
+.form-control {
+    border-radius: 10px;
+    color: black;
+}
+
+
+/* .img-div {
+    background: url("/assets/123.svg") no-repeat center;
+    background-size: cover;
+} */
+
+.log-in {
+    font-weight: bold;
+    text-align: center;
+}
+
+.button
+{
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: blue;
+
+}
+
+
+.btn-hover
+{
+    font-weight: normal;
+    color: #080808;
+    cursor: pointer;
+    background-color:inherit;
+    border-color: transparent;
+}
+
+.fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .fa-facebook {
+    color: blue;
+    background-color: #fff;
+  }
+
+
+  .body{
+      background: url("/assets/images/pen.jpg");
+  }
